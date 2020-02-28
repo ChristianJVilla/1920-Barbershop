@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  
+		<title>Slideshow with Animated Circular </title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="../css/services.css">
+  </head>
+  <body>
+    
+    <section class="slideshow">
+
+      <ul class="navigation">
+
+        <li class="navigation-item active">
+          <span class="rotate-holder"></span>
+          <span class="background-holder" style="background-image: url(../images/1920-2.JPG);"></span>
+        </li>
+
+        <li class="navigation-item">
+          <span class="rotate-holder"></span>
+          <span class="background-holder" style="background-image: url(../images/gcut.jpeg);"></span>
+        </li>
+
+        <li class="navigation-item">
+          <span class="rotate-holder"></span>
+          <span class="background-holder" style="background-image: url(../images/haircut.jpeg);"></span>
+        </li>
+      
+        <li class="navigation-item">
+          <span class="rotate-holder"></span>
+          <span class="background-holder" style="background-image: url(../images/background.jpeg);"></span>
+        </li>
+      
+        <li class="navigation-item">
+          <span class="rotate-holder"></span>
+          <span class="background-holder" style="background-image: url(../images/beard.jpeg);"></span>
+        </li>
+      
+        <li class="navigation-item">
+          <span class="rotate-holder"></span>
+          <span class="background-holder" style="background-image: url(../images/shampoo.jpeg);"></span>
+        </li>
+
+      </ul>
+      
+      <div class="detail">
+      
+        <div class="detail-item active">
+          <div class="headline">1920 Full Service</div>
+          <video muted id="video" src="../video/fs.mp4" autoplay="true" type="video/mp4"></video>
+        </div>
+        
+        <div class="detail-item">
+          <div class="headline">Gentlemans haircut</div>
+          <div class="background" style="background-image: url(../images/gcut.jpeg);"></div>
+        </div>
+        
+        <div class="detail-item">
+          <div class="headline">Haircut</div>
+          <div id="haircut" class="background" style="background-image: url(../images/haircut.jpeg);"></div>
+        </div>
+        
+        <div class="detail-item">
+          <div class="headline">Hot Towel Shave</div>
+          <div class="background" style="background-image: url(../images/background.jpeg);"></div>
+        </div>
+        <div class="detail-item">
+          <div class="headline">Beard Trim</div>
+          <div id="beard" class="background" style="background-image: url(../images/beard.jpeg);"></div>
+        </div>
+        <div class="detail-item">
+          <div class="headline">Shampoo</div>
+          <div class="background" style="background-image: url(../images/shampoo.jpeg);"></div> 
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/TextPlugin.min.js"></script>
+    <script src="../js/services.js"></script>
+  </body>
+</html>
