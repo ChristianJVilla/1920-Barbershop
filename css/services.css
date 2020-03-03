@@ -11,6 +11,7 @@ body {
     min-height: 100%;
     overflow-x: hidden;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    background-color: black;
 }
 
 
@@ -278,4 +279,47 @@ body section.slideshow .detail .detail-item.active {
     height: 50%;
     height: calc(50% + 100px);
     filter: brightness(50%);
+}
+
+.title {
+    position: absolute;
+    background-color: rgba(201, 146, 26, 0.74);
+    display: block;
+    width: 100%;
+    max-width: calc(100% - 480px);
+    height: 126px;
+    top: 75%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    overflow: visible;
+    white-space: nowrap;
+    box-sizing: border-box;
+    z-index: 2;
+    font-weight: 800;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(7, 5, 5, 0.5) 3px 5px 2px;
+}
+
+.description {
+    position: absolute;
+    display: block;
+    width: 100%;
+    max-width: calc(100% - 480px);
+    height: 126px;
+    top: 90%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    overflow: visible;
+    white-space: nowrap;
+    box-sizing: border-box;
+    z-index: 2;
+    font-family: 'Deadhead Script', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    word-spacing: .05em;
 }
