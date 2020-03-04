@@ -37,6 +37,18 @@ function fadeOut() {
         top: "-110%",
         ease: Expo.easeInOut
     })
+};
 
 
-}
+const services = document.getElementById('services');
+
+services.addEventListener('click', function() {
+    window.location.href = '../html/services.html';
+});
+
+
+const locationPage = document.getElementById('locationPage')
+
+locationPage.addEventListener('click', function() {
+    window.location.href = '../html/location.html';
+});

@@ -95,7 +95,7 @@ var map = new google.maps.Map(document.getElementById('map'), {
         '<div id="siteNotice">'+
         '</div>'+
         '<h1 id="firstHeading" class="firstHeading">1920 Barbershop</h1>'+
-        '<img src="../images/logo.png" style="height: 100px; width: 100px; display: block; margin-left: auto; margin-right: auto;" alt="barbershop"/>' +
+        '<img src="../images/logo.png" style="height: 50px; width: 50px; display: block; margin-left: auto; margin-right: auto;" alt="barbershop"/>' +
         '<div id="bodyContent">'+
         '</div>'+
         '</div>';
@@ -109,3 +109,15 @@ var map = new google.maps.Map(document.getElementById('map'), {
     })
 }
 
+const services = document.getElementById('services');
+
+services.addEventListener('click', function() {
+    window.location.href = '../html/services.html';
+});
+
+
+const locationPage = document.getElementById('locationPage')
+
+locationPage.addEventListener('click', function() {
+    window.location.href = '../html/location.html';
+});

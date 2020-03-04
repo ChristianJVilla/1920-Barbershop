@@ -1,220 +1,380 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 #background {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 .content {
-    width: 60%;
-    margin: 0 auto;
-    z-index: -1;
-    position: absolute;
-    top: 60%;
-    left: 10%;
-    transform: translate(0, -50%);
+  width: 60%;
+  margin: 0 auto;
+  z-index: -1;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  transform: translate(0, -50%);
+  transition: 1s;
 }
 
 .content h1 {
-    font-size: 54px;
-    color: black;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+  font-size: 54px;
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .content p {
-    margin-top: 0;
-    text-align: left;
-    color: black;
-    font-weight: 400;
+  margin-top: 0;
+  text-align: left;
+  color: black;
+  font-weight: 400;
 }
 
 .overlay-2 {
-    z-index: 0;
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background-color: black;
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
 }
 
 .overlay {
-    z-index: 1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url(../images/background.jpeg) no-repeat center center fixed;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/background.jpeg) no-repeat center center fixed;
 }
 
 .myBtn {
-    font-family: Poppins;
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  font-family: Poppins;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 button {
-    display: block;
-    padding: 24px 48px;
-    font-family: Poppins;
-    font-weight: 700;
-    font-size: 12px;
-    letter-spacing: 6px;
-    color: white;
-    border: 2px solid white;
-    text-transform: uppercase;
-    outline: none;
-    overflow: hidden;
-    background: none;
-    z-index: 1;
-    cursor: crosshair;
-    transition: ease-out;
+  display: block;
+  padding: 24px 48px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 6px;
+  color: white;
+  border: 2px solid white;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  background: none;
+  z-index: 1;
+  cursor: crosshair;
+  transition: ease-out;
 }
 
 .myBtn:hover {
-    color: black;
-    cursor: crosshair;
+  color: black;
+  cursor: crosshair;
 }
 
 .myBtn:before {
-    content: "";
-    position: absolute;
-    background: white;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 100%;
-    z-index: -10;
-    transition: top 0.8s ease-out;
+  content: "";
+  position: absolute;
+  background: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -10;
+  transition: top 0.8s ease-out;
 }
 
 .myBtn:hover:before {
-    top: 0;
+  top: 0;
 }
 
 #logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: fill 0.5s ease forwards 4.3s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fill 0.5s ease forwards 4.3s;
 }
 
 #logo path:nth-child(1) {
-    stroke-dasharray: 273.18; 
-    stroke-dashoffset: 273.18;
-    animation: line-anim 2s ease forwards;
+  stroke-dasharray: 273.18;
+  stroke-dashoffset: 273.18;
+  animation: line-anim 2s ease forwards;
 }
 
 #logo path:nth-child(2) {
-    stroke-dasharray: 503.04; 
-    stroke-dashoffset: 503.04;
-    animation: line-anim 2s ease forwards;
+  stroke-dasharray: 503.04;
+  stroke-dashoffset: 503.04;
+  animation: line-anim 2s ease forwards;
 }
 
 #logo path:nth-child(3) {
-    stroke-dasharray: 473;    
-    stroke-dashoffset: 473;
-    animation: line-anim 2s ease forwards 0.3s;
-    
+  stroke-dasharray: 473;
+  stroke-dashoffset: 473;
+  animation: line-anim 2s ease forwards 0.3s;
 }
 
 #logo path:nth-child(4) {
-    stroke-dasharray: 437;    
-    stroke-dashoffset: 437;
-    animation: line-anim 2s ease forwards 0.6s;
-    
+  stroke-dasharray: 437;
+  stroke-dashoffset: 437;
+  animation: line-anim 2s ease forwards 0.6s;
 }
 
 #logo path:nth-child(5) {
-    stroke-dasharray: 544;    
-    stroke-dashoffset: 544;
-    animation: line-anim 2s ease forwards 0.9s;
-    
+  stroke-dasharray: 544;
+  stroke-dashoffset: 544;
+  animation: line-anim 2s ease forwards 0.9s;
 }
 
 #logo path:nth-child(6) {
-    stroke-dasharray: 450;    
-    stroke-dashoffset: 450;
-    animation: line-anim 2s ease forwards 1.2s;
-
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  animation: line-anim 2s ease forwards 1.2s;
 }
 
 #logo path:nth-child(7) {
-    stroke-dasharray: 539;    
-    stroke-dashoffset: 539;
-    animation: line-anim 2s ease forwards 1.5s;
-    
+  stroke-dasharray: 539;
+  stroke-dashoffset: 539;
+  animation: line-anim 2s ease forwards 1.5s;
 }
 
 #logo path:nth-child(8) {
-    stroke-dasharray: 544;    
-    stroke-dashoffset: 544;
-    animation: line-anim 2s ease forwards 1.8s;
-    
+  stroke-dasharray: 544;
+  stroke-dashoffset: 544;
+  animation: line-anim 2s ease forwards 1.8s;
 }
 
 #logo path:nth-child(9) {
-    stroke-dasharray: 554.5;    
-    stroke-dashoffset: 554.4;
-    animation: line-anim 2s ease forwards 2.1s;
-    
+  stroke-dasharray: 554.5;
+  stroke-dashoffset: 554.4;
+  animation: line-anim 2s ease forwards 2.1s;
 }
 
 #logo path:nth-child(10) {
-    stroke-dasharray: 539;    
-    stroke-dashoffset: 539;
-    animation: line-anim 2s ease forwards 2.4s;
-    
+  stroke-dasharray: 539;
+  stroke-dashoffset: 539;
+  animation: line-anim 2s ease forwards 2.4s;
 }
 
 #logo path:nth-child(11) {
-    stroke-dasharray: 496;    
-    stroke-dashoffset: 496;
-    animation: line-anim 2s ease forwards 2.7s;
-    
+  stroke-dasharray: 496;
+  stroke-dashoffset: 496;
+  animation: line-anim 2s ease forwards 2.7s;
 }
 
 #logo path:nth-child(12) {
-    stroke-dasharray: 575.13;    
-    stroke-dashoffset: 575.13;
-    animation: line-anim 2s ease forwards 3.0s;
-    
+  stroke-dasharray: 575.13;
+  stroke-dashoffset: 575.13;
+  animation: line-anim 2s ease forwards 3s;
 }
 
 #logo path:nth-child(13) {
-    stroke-dasharray: 459;    
-    stroke-dashoffset: 459;
-    animation: line-anim 2s ease forwards 3.3s;
-    
+  stroke-dasharray: 459;
+  stroke-dashoffset: 459;
+  animation: line-anim 2s ease forwards 3.3s;
 }
 
 #logo path:nth-child(14) {
-    stroke-dasharray: 428.6;    
-    stroke-dashoffset: 428.6;
-    animation: line-anim 2s ease forwards 3.6s;
-    
+  stroke-dasharray: 428.6;
+  stroke-dashoffset: 428.6;
+  animation: line-anim 2s ease forwards 3.6s;
 }
 
-
-
 @keyframes line-anim {
-    to {
-        stroke-dashoffset: 0;
-    }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @keyframes fill {
-    from {
-        fill: transparent;
-    }
-    to {
-        fill: white;
-    }
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
 }
 
+.navbar {
+  width: 150px;
+  height: 150px;
+  top: 10%;
+  left: 45%;
+  line-height: 150px;
+  border-radius: 50%;
+  background-color: black;
+  position: relative;
+  position: absolute;
+  cursor: pointer;
+  text-align: center;
+  font-size: 2.75em;
+  font-weight: bold;
+  color: burlywood;
+  transition: 0.24s 0.2s;
+  border: 2px solid burlywood;
+  background-image: url(https://i.ibb.co/mStw2tH/Screen-Shot-2020-02-27-at-5-26-39-PM.png);
+  background-size: cover;
+  background-position-x: center;
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  transition: 1s;
+}
+
+.navbar:hover {
+  transform: rotate(360deg) scale(2);
+  transition: 1s;
+  top: 30%;
+}
+
+.navbar:hover ~ .content {
+  filter: blur(8px);
+  transition: 1s;
+}
+
+.navbar .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: -75px;
+  left: -75px;
+  border: 150px solid transparent;
+  cursor: default;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 1.4s 0.07s;
+  z-index: -1;
+}
+
+.navbar:hover .menu {
+  transition: transform 0.4s 0.08s, z-index 0s 0.5s;
+  transform: scale(1);
+  z-index: 1;
+}
+
+.navbar .menu li {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  transform-origin: 100px 100px;
+  transition: all 0.5s 0.1s;
+}
+
+.navbar:hover .menu > li {
+  transition: all 0.7s;
+}
+
+.navbar .menu li > i {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  background: rgb(29, 29, 29);
+  position: absolute;
+  font-size: 59%;
+  color: burlywood;
+  border: 1px solid burlywood;
+  transition: 0.7s;
+}
+
+.menu li > i:hover {
+  background: white;
+  color: black;
+  border-color: black;
+}
+
+.navbar:hover .menu li:nth-child(1) {
+  transition-delay: 0.02s;
+  transform: rotate(85deg);
+}
+
+.navbar:hover .menu li:nth-child(1) i {
+  transition-delay: 0.04s;
+  transform: rotate(635deg);
+}
+
+.navbar:hover .menu li:nth-child(2) {
+  transition-delay: 0.04s;
+  transform: rotate(125deg);
+}
+
+.navbar:hover .menu li:nth-child(2) i {
+  transition-delay: 0.08s;
+  transform: rotate(595deg);
+}
+
+.navbar:hover .menu li:nth-child(3) {
+  transition-delay: 0.06s;
+  transform: rotate(165deg);
+}
+
+.navbar:hover .menu li:nth-child(3) i {
+  transition-delay: 0.12s;
+  transform: rotate(555deg);
+}
+
+.navbar:hover .menu li:nth-child(4) {
+  transition-delay: 0.08s;
+  transform: rotate(205deg);
+}
+
+.navbar:hover .menu li:nth-child(4) i {
+  transition-delay: 0.16s;
+  transform: rotate(515deg);
+}
+
+.navbar:hover .menu li:nth-child(5) {
+  transition-delay: 0.1s;
+  transform: rotate(245deg);
+}
+
+.navbar:hover .menu li:nth-child(5) i {
+  transition-delay: 0.2s;
+  transform: rotate(475deg);
+}
+
+.navbar:hover .menu li:nth-child(6) {
+  transition-delay: 0.12s;
+  transform: rotate(285deg);
+}
+
+.navbar:hover .menu li:nth-child(6) i {
+  transition-delay: 0.24s;
+  transform: rotate(435deg);
+}
+
+.navbar:hover .menu li:nth-child(7) {
+  transition-delay: 0.14s;
+  transform: rotate(325deg);
+}
+
+.navbar:hover .menu li:nth-child(7) i {
+  transition-delay: 0.28s;
+  transform: rotate(395deg);
+}
+
+.navbar:hover .menu li:nth-child(8) {
+  transition-delay: 0.16s;
+  transform: rotate(365deg);
+}
+
+.navbar:hover .menu li:nth-child(8) i {
+  transition-delay: 0.32s;
+  transform: rotate(355deg);
+}
+
+.fa-clickable {
+    cursor: crosshair;
+};
