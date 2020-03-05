@@ -137,3 +137,39 @@ const locationPage = document.getElementById('locationPage')
 locationPage.addEventListener('click', function() {
     window.location.href = '../html/location.html';
 });
+
+const facebook = document.getElementById('facebook');
+
+facebook.addEventListener('click', function() {
+    window.open("https://www.facebook.com/1920-Barbershop-308153830081834/")
+});
+
+const twitter = document.getElementById('twitter');
+
+twitter.addEventListener('click', function() {
+    window.open("https://twitter.com/1920Barbershop")
+});
+
+const youtube = document.getElementById('youtube');
+
+youtube.addEventListener('click', function() {
+    window.open("https://www.youtube.com/channel/UCsgY1wAOj2-hstdkumRNzHg/featured")
+});
+
+const insta = document.getElementById('insta');
+
+insta.addEventListener('click', function() {
+    window.open("https://www.instagram.com/1920_barbershop/?igshid=71uns72vbv8f")
+});
+
+const gallery = document.getElementById('gallery');
+
+gallery.addEventListener('click', function() {
+    window.location.href = '../html/gallery.html';
+});
+
+const barbers = document.getElementById('barbers');
+
+barbers.addEventListener('click', function() {
+    window.location.href = '../html/barbers.html';
+});

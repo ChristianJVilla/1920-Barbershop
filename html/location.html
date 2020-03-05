@@ -9,51 +9,52 @@
     <link rel="stylesheet" href="../css/location.css">
     </head>
     <body>
-        <div class="navbar">
-            <ul class="menu">
-            <li><i class="fab fa-facebook"></i></li>
-            <li><i class="fab fa-twitter"></i></li>
-            <li><i class="fab fa-google-plus-g"></i></li>
-            <li><i class="fab fa-linkedin"></i></li>
-            <li><i class="fab fa-pinterest"></i></li>
-            <li><i class="fab fa-skype"></i></li>
-            <li id="locationPage"><i class="fab fa-instagram fa-clickable"></i></li>
-            <li id="services"><i class="fab fa-github fa-clickable"></i></li>
-            </ul>
-        </div>
         <div id="contact">
     <div id="map"></div>
-    <section id="footer">
-        <div class="container">
-            <div class="col">
-                <div class="">
-                    <h5 class="title">1920 Barbershop Info</h5>
-                    <ul class="list-unstyled quick-links">
-                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-                        <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-                    <ul class="list-unstyled list-inline social text-center">
-                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
-                    </ul>
-                </div>
-                </hr>
-            </div>	
+    <div class="info">
+        <div style="border-bottom: 1px solid burlywood; width: 100%; height: 50%;">
+            <h1 class="title title-map">Location</h1>
+            <address class="address">
+                2045 Mount Diablo Street Suite #205
+                <br>
+                Concord, CA 94520
+                United States
+                <br>
+                <a class="phone" href="mailto:1920barbershop@gmail.com">1920barbershop@gmail.com</a> <i class="fas fa-envelope-square"></i>
+                <br>
+                <a class="phone"href="tel:925-332-5458">(925)332-5458</a> <i class="fas fa-phone-alt"></i>
+                <br>
+                <a class="phone" href="sms:925-332-5458">Text us</a> <i class="fas fa-comments"></i>
+            </address>
         </div>
-    </section>
+        <div style=" width: 100%; height: 50%;">
+            <div class="title title-map">Hours</div>
+            <ul class="hours">
+                <li><span>SUN:</span> <span class="closed">Closed</span></li>
+                <li><span>MON:</span> <span class="closed">Closed</span></li>
+                <li><span>TUE - FRI:</span> 10:00 AM – 6:00 PM</li>
+                <li><span>SAT:</span> 10:00 AM – 5:00 PM</li>
+            </ul>
+            <div class="navbar">
+            <ul class="menu">
+            <li id="facebook" title="1920 facebook"><i class="fab fa-facebook fa-clickable"></i></li>
+            <li id="twitter" title="1920 twitter"><i class="fab fa-twitter fa-clickable"></i></li>
+            <li id="youtube" title="1920 youtube"><i class="fab fa-youtube fa-clickable"></i></li>
+            <li id="insta" title="1920 instagram"><i class="fab fa-instagram fa-clickable"></i></li>
+            <li id="barbers" title="Barbers"><i class="fas fa-users fa-clickable"></i></li>
+            <li id="gallery" title="Gallery"><i class="fas fa-images fa-clickable"></i></li>
+            <li id="locationPage" title="Location/hours"><i class="fas fa-map-marked-alt fa-clickable"></i></i></li>
+            <li id="services" title="Services"><i class="fas fa-cut fa-clickable"></i></i></li>
+            </ul>
+        </div>
+        </div>
     </div>
-    <script src="../js/location.js"></script>
+    </div>
     
+<script src="../js/location.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBngMwS5_sja5v_C4FlUwI2orD042X918I&callback=initMap"
+    async defer>
+</script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script
