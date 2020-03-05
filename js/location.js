@@ -97,7 +97,7 @@ let map = new google.maps.Map(document.getElementById('map'), {
         '<div id="siteNotice">'+
         '</div>'+
         '<h1 id="firstHeading" class="firstHeading">1920 Barbershop</h1>'+
-        '<img src="../images/logo.png" style="height: 50px; width: 50px; display: block; margin-left: auto; margin-right: auto;" alt="barbershop"/>' +
+        '<img src="https://1920-barbershop.s3-us-west-1.amazonaws.com/logo.png" style="height: 50px; width: 50px; display: block; margin-left: auto; margin-right: auto;" alt="barbershop"/>' +
         '<div id="bodyContent">'+
         '</div>'+
         '</div>';
