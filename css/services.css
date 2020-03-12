@@ -350,7 +350,7 @@ body section.slideshow .detail .detail-item.active {
     transition: 1s;
     z-index: 10;
 }
-  
+
     .navbar:hover {
     transform: rotate(360deg) scale(2);
     transition: 1s;

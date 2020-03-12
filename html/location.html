@@ -2,19 +2,20 @@
 <html>
 
 <head>
-    <title>Simple Map</title>
+    <title>1920 Info</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/location.css">
+    <link rel="shortcut icon" type="image/png" href="https://1920-barbershop.s3-us-west-1.amazonaws.com/logo.png">
 </head>
 
 <body>
     <div id="contact">
         <div id="map"></div>
         <div class="info">
-            <div style="border-bottom: 1px solid burlywood; width: 100%; height: 50%;">
+            <div id="mobile-address" style="border-bottom: 1px solid burlywood; width: 100%; height: 50%;">
                 <h1 class="title title-map">Location</h1>
                 <address class="address">
                     2045 Mount Diablo Street Suite #205
@@ -30,38 +31,16 @@
                     <a class="phone" href="sms:925-332-5458">Text us</a> <i class="fas fa-comments"></i>
                 </address>
             </div>
-            <div style=" width: 100%; height: 47%;">
-                <h1 class="title" style="margin: 0;">Hours</h1>
-                <ul class="hours">
-                    <li><span>SUN:</span> <span class="closed">Closed</span></li>
-                    <li><span>MON:</span> <span class="closed">Closed</span></li>
-                    <li><span>TUE - FRI:</span> 10:00 AM – 6:00 PM</li>
-                    <li><span>SAT:</span> 10:00 AM – 5:00 PM</li>
-                </ul>
-                <div class="navbar">
-                    <ul class="menu">
-                        <li id="facebook" title="1920 facebook"><i class="fab fa-facebook fa-clickable"></i></li>
-                        <li id="twitter" title="1920 twitter"><i class="fab fa-twitter fa-clickable"></i></li>
-                        <li id="youtube" title="1920 youtube"><i class="fab fa-youtube fa-clickable"></i></li>
-                        <li id="insta" title="1920 instagram"><i class="fab fa-instagram fa-clickable"></i></li>
-                        <li id="barbers" title="Barbers"><i class="fas fa-users fa-clickable"></i></li>
-                        <li id="gallery" title="Gallery"><i class="fas fa-images fa-clickable"></i></li>
-                        <li id="locationPage" title="Location/hours"><i
-                                class="fas fa-map-marked-alt fa-clickable"></i></i></li>
-                        <li id="services" title="Services"><i class="fas fa-cut fa-clickable"></i></i></li>
-                    </ul>
-                </div>
-            </div>
         </div>
-    </div>
 
-    <script src="../js/location.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBngMwS5_sja5v_C4FlUwI2orD042X918I&callback=initMap"
-        async defer>
-        </script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/3a170d362e.js" crossorigin="anonymous"></script>
+        <script src="../js/location.js"></script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBngMwS5_sja5v_C4FlUwI2orD042X918I&callback=initMap"
+            async defer>
+            </script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/3a170d362e.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

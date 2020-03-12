@@ -3,21 +3,43 @@ body {
   color: white;
 }
 
-.video-hero {
-  width: 95vw;
-  height: 86vh;
-  border: 2px solid burlywood;
-  margin: 0 0 50px 25px;
+@font-face {
+  font-family: Deadhead Script;
+  src: url(../fonts/Deadhead\ Script.ttf);
 }
 
-h1 {
+.video-hero {
+  width: 95vw;
+  height: 63.5vh;
+  border: 2px solid burlywood;
+  margin: 0 0 50px 25px;
+
+}
+
+.names {
+  font-family: "Deadhead Script";
+  font-size: 60px;
+  position: absolute;
+  top: 5px;
+  left: 7vw;
+  margin: 0 0;
+}
+
+.barber-name {
+  position: relative;
+}
+
+
+.headers {
   text-align: center;
-  font-size: 40px;
+  margin: 10px 0;
+  font-size: 80px;
+  font-family: "Deadhead Script";
 }
 
 .barbers-container {
   width: 95vw;
-  height: 160vh;
+  height: 180vh;
   display: grid;
   grid-template-columns: 40vw 40vw;
   border: 2px solid burlywood;
@@ -26,22 +48,73 @@ h1 {
 
 .barber {
   width: 400px;
-  height: 500px;
+  height: 600px;
   margin: 3vw 0 3vw 190px;
   border: 1px solid burlywood;
   display: flex;
   flex-direction: column;
 }
 
-.barber-img {
+.book-appt {
+  opacity: 0;
+  transform: translateX(-100%);
+  visibility: hidden;
+  position: absolute;
+  top: 12%;
+  left: 28%;
+  padding: 2px;
+  transition: 1s;
+  width: 12vw;
+  height: 8vh;
+  background: rgba(0, 0, 0, 0);
+  color: rgb(198,198,198);
+  font-size: 35px;
+  font-family: "Deadhead Script";
   border: 1px solid burlywood;
-  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.barber:hover .book-appt {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+  transition: 1s;
+}
+
+.barber:hover .barber-name h3{
+  opacity: 0;
+  transform: translateX(70%);
+  visibility: hidden;
+  transition: 1s;
+}
+
+.barber-img {
+  height:85%;
   width: 100%;
 }
 
+.barber-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .barber-name {
-  border: 1px solid burlywood;
-  height: 20%;
-  text-align: center;
-  font-size: 30px;
+  border-top: .5px solid burlywood;
+  height: 25%;
+}
+
+.barber-name h3 {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  transition: 1s;
+}
+
+#video {
+  height: 70vh;
+  width: 60vw;
+  margin-top: -25px;
 }
