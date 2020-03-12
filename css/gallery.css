@@ -35,13 +35,14 @@ body {
 }
 
 .greeting {
+    font-family: "Deadhead Script";
     background-color: burlywood;
     display: block;
     text-align: center;
     font-weight: 800;
-    font-size: 60px;
+    font-size: 80px;
     text-transform: uppercase;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.1em;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -58,7 +59,7 @@ body {
 }
 
 .image-gallery {
-    margin-bottom: 150px;
+    margin-bottom: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -81,6 +82,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 10px 5px 5px black;
 }
 
 .img-1 {
