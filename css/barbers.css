@@ -1,0 +1,47 @@
+body {
+  background: #0a0a0a;
+  color: white;
+}
+
+.video-hero {
+  width: 95vw;
+  height: 86vh;
+  border: 2px solid burlywood;
+  margin: 0 0 50px 25px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.barbers-container {
+  width: 95vw;
+  height: 160vh;
+  display: grid;
+  grid-template-columns: 40vw 40vw;
+  border: 2px solid burlywood;
+  margin: 50px 0 0 25px;
+}
+
+.barber {
+  width: 400px;
+  height: 500px;
+  margin: 3vw 0 3vw 190px;
+  border: 1px solid burlywood;
+  display: flex;
+  flex-direction: column;
+}
+
+.barber-img {
+  border: 1px solid burlywood;
+  height: 80%;
+  width: 100%;
+}
+
+.barber-name {
+  border: 1px solid burlywood;
+  height: 20%;
+  text-align: center;
+  font-size: 30px;
+}
