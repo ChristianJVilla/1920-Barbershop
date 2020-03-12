@@ -18,10 +18,10 @@ body {
 
 .names {
   font-family: "Deadhead Script";
-  font-size: 60px;
+  font-size: 80px;
   position: absolute;
   top: 5px;
-  left: 7vw;
+  left: 5vw;
   margin: 0 0;
 }
 
@@ -35,29 +35,42 @@ body {
   margin: 10px 0;
   font-size: 80px;
   font-family: "Deadhead Script";
+  color: burlywood;
+  text-shadow: 2px -1.5px 1px rgb(61, 61, 61);
+
 }
 
 .barbers-container {
-  width: 95vw;
+  width: 80vw;
   height: 180vh;
   display: grid;
   grid-template-columns: 40vw 40vw;
-  border: 2px solid burlywood;
-  margin: 50px 0 0 25px;
+  margin: 3vw 0 3vw 220px;
 }
 
 .barber {
   width: 400px;
   height: 600px;
-  margin: 3vw 0 3vw 190px;
   border: 1px solid burlywood;
   display: flex;
   flex-direction: column;
+  background-color: rgb(43, 43, 43);
+  transition: .75s;
 }
+
+.barber:hover {
+  transform: scale(1.075);
+  transition: .75s;
+}
+
+.barber:hover .barber:not(#ricky){
+filter: blur(4px);
+}
+
 
 .book-appt {
   opacity: 0;
-  transform: translateX(-100%);
+  transform: translateX(-70%);
   visibility: hidden;
   position: absolute;
   top: 12%;
@@ -85,7 +98,7 @@ body {
 
 .barber:hover .barber-name h3{
   opacity: 0;
-  transform: translateX(70%);
+  transform: translateX(30%);
   visibility: hidden;
   transition: 1s;
 }
@@ -104,6 +117,7 @@ body {
 .barber-name {
   border-top: .5px solid burlywood;
   height: 25%;
+  color: #0a0a0a;
 }
 
 .barber-name h3 {
@@ -111,6 +125,7 @@ body {
   visibility: visible;
   transform: translateX(0);
   transition: 1s;
+  text-shadow: 2px -1.5px 1px burlywood;
 }
 
 #video {
