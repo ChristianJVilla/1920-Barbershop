@@ -53,16 +53,16 @@ body {
   font-family: "Deadhead Script", sans-serif;
   color: white;
   list-style: none;
-  margin-left: 50px;
+  margin-left: -50px;
   font-weight: 400;
   font-size: 25px;
   word-spacing: 0.3em;
+  text-align: center;
 }
 
 .hours span {
   color: burlywood;
   font-size: 30px;
-  margin-bottom: 10px;
 }
 
 .closed {
@@ -299,7 +299,6 @@ a.nostyle:visited {
         font-family: 'Deadhead Script', sans-serif;
         color: white;
         list-style: none;
-        margin-left: 50px;
         font-weight: 400;
         font-size: 20px;
         word-spacing: .3em;
