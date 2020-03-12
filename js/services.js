@@ -9,11 +9,11 @@
  * https://coidea.website
  */
 
-  $('.slideshow').imagesLoaded({ background: true })
-  .done( function() {
+$('.slideshow').imagesLoaded({ background: true })
+  .done(function () {
     // hide loader
     $('.loader').addClass('is-loaded');
-    
+
     // init variables
     var slideshow = $(".slideshow"),
       navigation = $(".navigation"),
@@ -23,12 +23,12 @@
       type = '_short';
 
     // prepare letters
-    $('.headline').each(function() {
+    $('.headline').each(function () {
       $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
     });
 
     // prepare navigation and set navigation items on the right place
-    navigationItem.each(function(index, elem) {
+    navigationItem.each(function (index, elem) {
       TweenMax.set(elem, {
         left: navigation.width() / 2 - navigationItem.width() / 2 - 10,
         rotation: 90 + (index * 360 / navigationItem.length),
@@ -41,7 +41,9 @@
         rotation: -90 - (index * 360 / navigationItem.length),
       });
     });
-    
+
+
+
     // set tween values
     function setTweenValues() {
       rotation = Number($(this).find('.rotate-holder').text());
@@ -54,13 +56,13 @@
         timeline = new TimelineMax();
 
       // add/remove class "active" from navigation & detail
-      navigationItem.each(function() {
+      navigationItem.each(function () {
         $(this).removeClass('active');
         if ($(this).index() == $(target).index()) {
           $(this).addClass('active');
         }
       });
-      detailItem.each(function() {
+      detailItem.each(function () {
         $(this).removeClass('active');
         if ($(this).index() == $(target).index()) {
           $(this).addClass('active');
@@ -76,7 +78,7 @@
         .staggerTo(navigationItem.find('.background-holder'), 0.6, {
           cycle: {
             //function that returns a value
-            rotation: function(index, element) {
+            rotation: function (index, element) {
               return -90 - Number($(element).prev('.rotate-holder').text()) + rotation + type;
             }
           },
@@ -87,25 +89,25 @@
           autoAlpha: 0,
           x: -100,
         },
-        {
-          autoAlpha: 1,
-          x: 0,
-          ease: Sine.easeInOut,
-        }, 0.025, '-=0.3')
+          {
+            autoAlpha: 1,
+            x: 0,
+            ease: Sine.easeInOut,
+          }, 0.025, '-=0.3')
         .fromTo($('.active').find('.background'), 0.9, {
           autoAlpha: 0,
           x: -100,
         },
-        {
-          autoAlpha: 1,
-          x: 0,
-          ease: Sine.easeInOut,
-        }, 0.05, '+=0.3');
+          {
+            autoAlpha: 1,
+            x: 0,
+            ease: Sine.easeInOut,
+          }, 0.05, '+=0.3');
     }
 
     // click/hover on items
     navigationItem.on('mouseenter', setTweenValues);
-    navigationItem.on('click', function() { doTween($(this)); })
+    navigationItem.on('click', function () { doTween($(this)); })
 
     // on load show slideshow as well as first "active" navigation/detail item
     TweenMax.to(slideshow, 1, { autoAlpha: 1 });
@@ -114,8 +116,8 @@
 
   });
 
-  // fast fix for resize window and refresh view, attention: not use in production, only for demo purposes!
-  (function () {
+// fast fix for resize window and refresh view, attention: not use in production, only for demo purposes!
+(function () {
   var width = window.innerWidth;
 
   window.addEventListener('resize', function () {
@@ -123,53 +125,53 @@
       window.location.reload(true);
     }
   });
-  })();
+})();
 
-  const services = document.getElementById('services');
+const services = document.getElementById('services');
 
-services.addEventListener('click', function() {
-    window.location.href = '../html/services.html';
+services.addEventListener('click', function () {
+  window.location.href = '../html/services.html';
 });
 
 
 const locationPage = document.getElementById('locationPage')
 
-locationPage.addEventListener('click', function() {
-    window.location.href = '../html/location.html';
+locationPage.addEventListener('click', function () {
+  window.location.href = '../html/location.html';
 });
 
 const facebook = document.getElementById('facebook');
 
-facebook.addEventListener('click', function() {
-    window.open("https://www.facebook.com/1920-Barbershop-308153830081834/")
+facebook.addEventListener('click', function () {
+  window.open("https://www.facebook.com/1920-Barbershop-308153830081834/")
 });
 
 const twitter = document.getElementById('twitter');
 
-twitter.addEventListener('click', function() {
-    window.open("https://twitter.com/1920Barbershop")
+twitter.addEventListener('click', function () {
+  window.open("https://twitter.com/1920Barbershop")
 });
 
 const youtube = document.getElementById('youtube');
 
-youtube.addEventListener('click', function() {
-    window.open("https://www.youtube.com/channel/UCsgY1wAOj2-hstdkumRNzHg/featured")
+youtube.addEventListener('click', function () {
+  window.open("https://www.youtube.com/channel/UCsgY1wAOj2-hstdkumRNzHg/featured")
 });
 
 const insta = document.getElementById('insta');
 
-insta.addEventListener('click', function() {
-    window.open("https://www.instagram.com/1920_barbershop/?igshid=71uns72vbv8f")
+insta.addEventListener('click', function () {
+  window.open("https://www.instagram.com/1920_barbershop/?igshid=71uns72vbv8f")
 });
 
 const gallery = document.getElementById('gallery');
 
-gallery.addEventListener('click', function() {
-    window.location.href = '../html/gallery.html';
+gallery.addEventListener('click', function () {
+  window.location.href = '../html/gallery.html';
 });
 
 const barbers = document.getElementById('barbers');
 
-barbers.addEventListener('click', function() {
-    window.location.href = '../html/barbers.html';
+barbers.addEventListener('click', function () {
+  window.location.href = '../html/barbers.html';
 });

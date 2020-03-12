@@ -1,0 +1,135 @@
+body {
+  background: #0a0a0a;
+  color: white;
+}
+
+@font-face {
+  font-family: Deadhead Script;
+  src: url(../fonts/Deadhead\ Script.ttf);
+}
+
+.video-hero {
+  width: 95vw;
+  height: 63.5vh;
+  border: 2px solid burlywood;
+  margin: 0 0 50px 25px;
+
+}
+
+.names {
+  font-family: "Deadhead Script";
+  font-size: 80px;
+  position: absolute;
+  top: 5px;
+  left: 5vw;
+  margin: 0 0;
+}
+
+.barber-name {
+  position: relative;
+}
+
+
+.headers {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 80px;
+  font-family: "Deadhead Script";
+  color: burlywood;
+  text-shadow: 2px -1.5px 1px rgb(61, 61, 61);
+
+}
+
+.barbers-container {
+  width: 80vw;
+  height: 180vh;
+  display: grid;
+  grid-template-columns: 40vw 40vw;
+  margin: 3vw 0 3vw 220px;
+}
+
+.barber {
+  width: 400px;
+  height: 600px;
+  border: 1px solid burlywood;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(43, 43, 43);
+  transition: .75s;
+}
+
+.barber:hover {
+  transform: scale(1.075);
+  transition: .75s;
+}
+
+.barber:hover .barber:not(#ricky){
+filter: blur(4px);
+}
+
+
+.book-appt {
+  opacity: 0;
+  transform: translateX(-70%);
+  visibility: hidden;
+  position: absolute;
+  top: 12%;
+  left: 28%;
+  padding: 2px;
+  transition: 1s;
+  width: 12vw;
+  height: 8vh;
+  background: rgba(0, 0, 0, 0);
+  color: rgb(198,198,198);
+  font-size: 35px;
+  font-family: "Deadhead Script";
+  border: 1px solid burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.barber:hover .book-appt {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+  transition: 1s;
+}
+
+.barber:hover .barber-name h3{
+  opacity: 0;
+  transform: translateX(30%);
+  visibility: hidden;
+  transition: 1s;
+}
+
+.barber-img {
+  height:85%;
+  width: 100%;
+}
+
+.barber-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.barber-name {
+  border-top: .5px solid burlywood;
+  height: 25%;
+  color: #0a0a0a;
+}
+
+.barber-name h3 {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  transition: 1s;
+  text-shadow: 2px -1.5px 1px burlywood;
+}
+
+#video {
+  height: 70vh;
+  width: 60vw;
+  margin-top: -25px;
+}
