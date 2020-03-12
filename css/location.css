@@ -12,6 +12,7 @@ html, body {
 
 #contact {
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
@@ -274,5 +275,35 @@ letter-spacing: .2em !important;
     padding-bottom: 0px;
     margin-bottom: 10px;
 }
+}
+
+@media screen and (max-width: 400px) {
+    #contact {
+        display: block;
+    }
+
+    .info {
+        height: 100%;
+        width: 100% !important;
+    }
+
+    #map {
+        height: 100%;
+        width: 100%;
+    }
+
+    .hours {
+        font-family: 'Deadhead Script', sans-serif;
+        color: white;
+        list-style: none;
+        margin-left: 50px;
+        font-weight: 400;
+        font-size: 20px;
+        word-spacing: .3em;
+    }
+
+    .navbar {
+        display: none;
+    }
 }
 
