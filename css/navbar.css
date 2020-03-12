@@ -1,0 +1,123 @@
+
+nav {
+  border-bottom: 0.5px solid burlywood;
+}
+
+@font-face {
+  font-family: Deadhead Script;
+  src: url(../fonts/Deadhead\ Script.ttf);
+}
+
+/*--- Navbar/Header ---*/
+
+#nav {
+  background-color: black;
+  height: 14vh;
+  animation: 1s slideInFromTop;
+}
+
+#div-url-links {
+  margin-right: 50px;
+}
+
+#div-url-links > .div-url-links:hover {
+  transition: 0.5s;
+  animation: bop_links 1s;
+  animation-fill-mode: forwards;
+
+}
+
+#brand-logo {
+  width: 10vw;
+  margin-top: -10px;
+  height: 12vh;
+}
+
+#GA-logo {
+  width: 3vw;
+  height: 6vh;
+  margin-top: -4px;
+}
+
+.links {
+  margin: 0 10px;
+  color: rgb(134, 134, 134);
+  animation: bop_linksBack 1s;
+}
+
+
+.url-links {
+  margin: 0 10px;
+  margin-bottom: -10px !important ;
+  color: rgb(198, 198, 198);
+  font-family: "Deadhead Script", sans-serif;
+  font-size: 30px;
+  animation: bop_linksBack 1s;
+}
+
+.url-links:hover {
+  text-decoration: none;
+  color: burlywood;
+}
+
+.links:hover {
+  color: white;
+  transition: 0.5s;
+  animation: bop_links .75s;
+  animation-fill-mode: forwards;
+}
+
+.div-url-links {
+  display: flex;
+  flex-direction: column;
+  animation: bop_linksBack 1s;
+  margin: 0 5px;
+}
+
+.div-url-links i {
+  color: white;
+}
+
+
+
+.div-url-links:hover > .url-links {
+  color: burlywood;
+  transition: .75s;
+}
+
+.div-url-links:hover > i {
+  color: burlywood;
+  transition: .75s;
+}
+
+
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+@keyframes bop_links {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
+
+@keyframes bop_linksBack {
+  0% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
