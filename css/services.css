@@ -3,9 +3,6 @@
     src: url(../fonts/Deadhead\ Script.ttf);
 }
 
-#video {
-    filter: brightness(70%);
-}
 
 .carousel-caption {
     background: rgba(0,0,0,.5);
@@ -18,6 +15,10 @@
     object-fit: cover;
 }
 
+#video {
+    filter: brightness(80%);
+}
+
 .title {
     background-color: burlywood;
     font-family: 'Deadhead Script';
@@ -25,12 +26,10 @@
     z-index: 2;
     font-weight: 800;
     font-size: 60px;
-    text-transform: uppercase;
     letter-spacing: 0.02em;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: rgba(7, 5, 5, 0.2) 3px 5px 2px;
 }
 
 .description {

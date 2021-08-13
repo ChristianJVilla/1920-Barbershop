@@ -6,16 +6,18 @@
 
 .title {
   background-color: burlywood;
+  font-family: "Deadhead Script";
   display: block;
   text-align: center;
   font-weight: 800;
-  font-size: 60px;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
+  font-size: 70px;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.1em;
+  word-spacing: .1em;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: rgba(7, 5, 5, 0.5) 3px 5px 2px;
+  /* text-shadow: rgba(7, 5, 5, 0.5) 3px 5px 2px; */
   padding-bottom: 6px;
   margin-bottom: 20px;
 }
